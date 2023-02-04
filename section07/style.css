@@ -1,0 +1,16 @@
+#header {
+    height: 75px;
+    background-color: darkgoldenrod;
+}
+#mapdiv {
+    height: 850px;
+    background-color: salmon;
+}
+#side_panel {
+    height: 850px;
+    background-color: beige;
+}
+#footer {
+    height: 75px;
+    background-color: darkgrey;
+}

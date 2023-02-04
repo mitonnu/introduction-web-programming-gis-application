@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+            crossorigin=""
+        />
+        <script
+            src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header" class="col-md-12">
+                    <h1 class="text-center">Mexico City</h1>
+                </div>
+                <div id="side-panel" class="col-md-3 col-sm-12">
+                    <h1 class="text-center">Attractions</h1>
+                </div>
+                <div id="mapdiv" class="col-md-9 col-sm-12"></div>
+                <div id="footer" class="col-md-12">
+                    <h4 id="map_coords" class="text-center">
+                        Latitude: 19.4 Longgitude: -99.1 Zoom Level: 11
+                    </h4>
+                </div>
+                <h4 class="text-center">
+                    &copy;2016
+                    <a href="http://millermountain.com">Miller Mountain LLC</a>
+                </h4>
+            </div>
+        </div>
+    </body>
+</html>
