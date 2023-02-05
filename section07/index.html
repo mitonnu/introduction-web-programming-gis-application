@@ -2,38 +2,77 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="bootstrap.min.css" />
         <link
             rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-            crossorigin=""
-        />
+            href="style.css" />
+        <link
+            rel="stylesheet"
+            href="bootstrap.min.css" />
+        <!-- Lecture Course Recommended -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+        <!-- Latest Version Package -->
+        <!-- <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
         <script
             src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
             integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-            crossorigin=""
-        ></script>
+            crossorigin=""></script> -->
+        <!-- Leaflet Plugin -->
+        <script src="resources/leaflet.ajax.js"></script>
+        <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
-        <script src="./script.js" defer></script>
+        <!-- Turf.js -->
+        <!-- <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script> -->
+        <script src="./resources/turf.js"></script>
+        <!-- External Script -->
+        <script
+            src="./script.js"
+            defer></script>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div id="header" class="col-md-12">
+                <div
+                    id="header"
+                    class="col-md-12">
                     <h1 class="text-center">Mexico City</h1>
                 </div>
-                <div id="side-panel" class="col-md-3 col-sm-12">
+                <div
+                    id="side_panel"
+                    class="col-md-3 col-sm-12">
                     <h1 class="text-center">Attractions</h1>
+                    <button
+                        id="btnBuffer"
+                        class="form-control btn-warning">
+                        Buffer
+                    </button>
+                    <button
+                        id="zoomToZocalo"
+                        class="form-control btn-primary attraction">
+                        Zocalo
+                    </button>
                 </div>
-                <div id="mapdiv" class="col-md-9 col-sm-12"></div>
-                <div id="footer" class="col-md-12">
-                    <h4 id="map_coords" class="text-center">
+                <div
+                    id="mapdiv"
+                    class="col-md-9 col-sm-12"></div>
+                <div
+                    id="footer"
+                    class="col-md-12">
+                    <h4
+                        id="map_coords"
+                        class="text-center">
                         Latitude: 19.4 Longgitude: -99.1 Zoom Level: 11
                     </h4>
                 </div>
@@ -43,5 +82,18 @@
                 </h4>
             </div>
         </div>
+        <script>
+            // let maymap = L.map('mapdiv');
+            // maymap.setView([19.4, -99.1], 11);
+
+            // let backgroundLayer = L.tileLayer(
+            //     'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+            // );
+            // maymap.addLayer(backgroundLayer);
+
+            // let zocaloMarker = L.marker([19.43278, -99.13333]);
+            // zocaloMarker.addTo(mymap);
+            // zocaloMarker.bindPopup('Zocalo');
+        </script>
     </body>
 </html>
