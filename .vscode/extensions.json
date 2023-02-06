@@ -1,3 +1,7 @@
 {
-    "recommendations": ["umoxfo.vscode-w3cvalidation"]
+    "recommendations": [
+        "umoxfo.vscode-w3cvalidation",
+        "devsense.phptools-vscode",
+        "xdebug.php-debug"
+    ]
 }
